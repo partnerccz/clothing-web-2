@@ -158,6 +158,7 @@ public class VerifyCodeUtils {
             int y = random.nextInt(h - 1);
             int xl = random.nextInt(6) + 1;
             int yl = random.nextInt(12) + 1;
+            g2.setStroke(new BasicStroke(2f));
             g2.drawLine(x, y, x + xl + 40, y + yl + 20);
         }
 
@@ -272,7 +273,7 @@ public class VerifyCodeUtils {
     }
 
     public static void main(String[] args) throws IOException {
-        File dir = new File("F:/verifies");
+        File dir = new File("D:/test1/");
         int w = 200, h = 80;
         for (int i = 0; i < 50; i++) {
             String verifyCode = generateVerifyCode(4);
